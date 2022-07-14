@@ -4,9 +4,10 @@ public class PlayVideoList {
     private String url;
     private String titleVideo;
 
-    public PlayVideoList(String url, String titleVideo) {
-        this.url = url;
+    public PlayVideoList(String titleVideo, String url) {
         this.titleVideo = titleVideo;
+        this.url = url;
+
     }
 
     public String getUrl() {

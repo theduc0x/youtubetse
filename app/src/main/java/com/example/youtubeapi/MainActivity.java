@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
         clVideo = findViewById(R.id.cl_video_play);
         sheetBehavior = BottomSheetBehavior.from(clVideo);
         btResize = findViewById(R.id.bt_play);
+        btTrans = findViewById(R.id.bt_trans);
         tvName = findViewById(R.id.tv_name);
         btResize.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +54,13 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
             }
         });
 
-
+        btTrans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toIntent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(toIntent);
+            }
+        });
 
     }
 
